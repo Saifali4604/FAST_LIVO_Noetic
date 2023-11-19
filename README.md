@@ -26,8 +26,6 @@ mkdir build && cd build && cmake ..
 make
 sudo make install
 ```
-
-
 ## Install
 
 Use the following commands to download and compile the package.
@@ -42,18 +40,17 @@ source ~/catkin_ws/devel/setup.bash
 **Note:** Remember to source the catkin_ws or the work space where you have cloned 
 
 ## Run the package 
----
-**Datasets for Avai:** Can be downloaded from [google drive](https://drive.google.com/drive/folders/1CGYEJ9-wWjr8INyan6q1BZz_5VtGB-fP?usp=sharing)
+**Run on private dataset** Can be downloaded from ([FAST-LIVO-Datasets](https://connecthkuhk-my.sharepoint.com/:f:/g/personal/zhengcr_connect_hku_hk/Esiqlmaql0dPreuOhiHlXl4Bqu5RRRIViK1EyuR4h1_n4w?e=fZdVn0))
 
 ```
-roslaunch fast_lio mapping_avia.launch
+roslaunch fast_livo mapping_avia.launch
 rosbag play YOUR_DOWNLOADED.bag
 ```
 or
-**Datasets for Velodyne:** Can be downloaded from [google drive](https://drive.google.com/drive/folders/1blQJuAB4S80NwZmpM6oALyHWvBljPSOE?usp=sharing) 
+**Run on benchmark dataset (NTU-VIRAL)**
 ```
-roslaunch fast_lio mapping_velodyne.launch
+roslaunch fast_livo mapping_avia_ntu.launch
 rosbag play YOUR_DOWNLOADED.bag
 ```
 ## 6.Acknowledgments
-[https://github.com/hku-mars/FAST_LIO]
+[https://github.com/hku-mars/FAST-LIVO]
